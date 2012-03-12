@@ -21,32 +21,35 @@ $(function(){
   });
 
   $('.gauge').each(function() {
+    var mileage = $(this).data('mileage'),
+        maxMileage = $(this).data('max');
+
     $(this).kendoGauge({
       theme: "blueopal",
 
       pointer: {
-        value: $(this).data('val')
+        value: mileage
       },
 
       scale: {
-        majorUnit: 50,
-        minorUnit: 10,
+        majorUnit: maxMileage/5,
+        minorUnit: maxMileage/50,
         startAngle: 0,
         endAngle: 90,
-        max: 400,
+        max: maxMileage,
 
         ranges: [
           {
             from: 0,
-            to: 300,
+            to: maxMileage*.70,
             color: "#00ab00"
           }, {
-            from: 300,
-            to: 350,
+            from: maxMileage*.70,
+            to: maxMileage*.90,
             color: "#d3ce37"
           }, {
-            from: 350,
-            to: 400,
+            from: maxMileage*.90,
+            to: maxMileage,
             color: "#ae130f"
           }
         ]

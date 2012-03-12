@@ -1,9 +1,8 @@
 <script type="script/x-kendo-tmpl" id="shoe_template">
 	<li class="span-4 shoe-container">
-		<p>#=name#</p>
-		
-		<div class="gauge" id="#=name#-gauge" data-val="#=currentMileage#"></div>
-		<span class="currentMileage" id="#=name#-mileage">#=currentMileage#</span>
+		<h2>#=name#</h2>
+		<p>Mileage: <span class="currentMileage" id="#=name#-mileage">#=currentMileage#</span> (Max. #=maxMileage#)</p>
+		<div class="gauge" id="#=name#-gauge" data-mileage="#=currentMileage#" data-max="#=maxMileage#"></div>		
 	</li>
 </script>
 
