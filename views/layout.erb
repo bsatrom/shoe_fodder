@@ -50,11 +50,11 @@
           <a class="brand" href="/">Shoe Fodder</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/contact">Contact</a></li>              
-              <li><a href="/track">Track</a></li>
-              <li><a href="/races">Race</a></li>
+              <li <% if title == 'Home' then %>class="active"<% end %>><a href="/">Home</a></li>
+              <li <% if title == 'About' then %>class="active"<% end %>><a href="/about">About</a></li>
+              <li <% if title == 'Contact' then %>class="active"<% end %>><a href="/contact">Contact</a></li>              
+              <li <% if title == 'Track' then %>class="active"<% end %>><a href="/track">Track</a></li>
+              <li <% if title == 'Races' then %>class="active"<% end %>><a href="/races">Race</a></li>
             </ul>
           </div>
         </div>
@@ -62,11 +62,10 @@
     </div>
 
     <div class="container">
-
+      
       <%= yield %>
-
+      
       <hr>
-
       <footer>
         <p>&copy; Carrot Pants Studios - 2012 | Powered by <a href="http://kendoui.com"><img atl="Kendo UI" src="img/kendo.png" /></a> | 
         	"Soccer Boot" symbol by Simon Child, from <a href="http://thenounproject.com">The Noun Project</a></p>
