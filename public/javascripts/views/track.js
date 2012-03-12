@@ -25,7 +25,7 @@ $(function(){
       theme: "blueopal",
 
       pointer: {
-        value: 0
+        value: $(this).data('val')
       },
 
       scale: {
