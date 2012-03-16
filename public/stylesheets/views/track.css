@@ -7,3 +7,11 @@
 .shoe-container {
 	text-align: center;
 }
+
+ul#shoe_list {
+	border-width: 0px;
+}
+
+#shoe_list li {
+	list-style: none;
+}

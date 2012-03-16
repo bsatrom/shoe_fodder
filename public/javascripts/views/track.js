@@ -56,4 +56,7 @@ $(function(){
       }
     });
   });
+
+  var gauge = $(".gauge").data("kendoGauge");
+  gauge.redraw();
 });

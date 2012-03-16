@@ -17,12 +17,12 @@
       }
     </style>
     <link href="../stylesheets/bootstrap-responsive.css" rel="stylesheet">
-    <link href="stylesheets/default.css" rel="stylesheet">
-    <link href="stylesheets/kendo.common.min.css" rel="stylesheet">
-    <link href="stylesheets/kendo.blueopal.min.css" rel="stylesheet">
+    <link href="/stylesheets/kendo.common.min.css" rel="stylesheet">
+    <link href="/stylesheets/kendo.blueopal.min.css" rel="stylesheet">
+    <link href="/stylesheets/default.css" rel="stylesheet">
     
 	<% if assets then %>
-    	<link href="stylesheets/views/<%= title.downcase %>.css" rel="stylesheet">    	
+    	<link href="/stylesheets/views/<%= title.downcase %>.css" rel="stylesheet">    	
     <% end %>
     
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -31,10 +31,10 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="imag/favicon.ico">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png">
   </head>
 
   <body>
@@ -54,7 +54,7 @@
               <li <% if title == 'About' then %>class="active"<% end %>><a href="/about">About</a></li>
               <li <% if title == 'Contact' then %>class="active"<% end %>><a href="/contact">Contact</a></li>              
               <li <% if title == 'Track' then %>class="active"<% end %>><a href="/track">Track</a></li>
-              <li <% if title == 'Races' then %>class="active"<% end %>><a href="/races">Race</a></li>
+              <li <% if title == 'Races' or title == 'Race' then %>class="active"<% end %>><a href="/races">Races</a></li>
             </ul>
           </div>
         </div>
@@ -67,17 +67,17 @@
       
       <hr>
       <footer>
-        <p>&copy; Carrot Pants Studios - 2012 | Powered by <a href="http://kendoui.com"><img atl="Kendo UI" src="img/kendo.png" /></a> | 
+        <p>&copy; Carrot Pants Studios - 2012 | Powered by <a href="http://kendoui.com"><img atl="Kendo UI" src="/img/kendo.png" /></a> | 
         	"Soccer Boot" symbol by Simon Child, from <a href="http://thenounproject.com">The Noun Project</a></p>
       </footer>
 
     </div> <!-- /container -->
 
-    <script src="javascripts/jquery.min.js"></script>
-    <script src="javascripts/kendo.all.js"></script>
-    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/kendo.all.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
     <% if assets then %>
-    	<script src="javascripts/views/<%= title.downcase %>.js"></script>    	
+    	<script src="/javascripts/views/<%= title.downcase %>.js"></script>    	
     <% end %>
   </body>
 </html>

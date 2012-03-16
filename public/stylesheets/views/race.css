@@ -1,0 +1,42 @@
+.gauge {
+    width: 600px;
+    height: 300px;
+}
+
+#fund_main {
+	display: -webkit-box;
+}
+
+.left {
+	margin-top: 30px;
+	border-width: 1px;
+}
+
+#fund_main .k-pager-wrap {
+}
+
+img {
+	width: 48px;
+	height: 48px;
+	vertical-align: middle;
+	border-radius: 5px;
+}
+
+#fund_main ul {
+	border-width: 0px;
+}
+
+/*
+ul {
+	width: 100%;
+	position: relative;
+	float: left;
+}
+*/
+
+#fundraising_list li {
+	list-style: none;
+	font-size: 18pt;
+	margin: 10px;
+	border-radius: 5px;
+}

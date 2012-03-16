@@ -24,11 +24,3 @@ footer img {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#005c83), to(#222222));
   background-image: -webkit-linear-gradient(top, #222222, #005c83);
 }
-
-ul#shoe_list {
-	border: 0;
-}
-
-#shoe_list li {
-	list-style: none;
-}
