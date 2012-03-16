@@ -1,25 +1,19 @@
 $(function() {
   var gauge,
   funds = new kendo.data.DataSource({
-    data: [{
-      name: 'Hurke Bolland',
-      donation: 300,
-      avatar: '/img/people/hurkeBolland.jpg'
-    }, 
-    {
-      name: 'Burke Holland',
-      donation: 25,
-      avatar: '/img/people/hurkeBolland.jpg'
-    }, 
-    {
-      name: 'Brandon Satrom',
-      donation: 15,
-      avatar: '/img/people/bsatrom-house.jpg'
-    }],
+    transport: {
+        read: {
+            url: "http://shoefodder-api.herokuapp.com/donors.json",
+            dataType: "json"
+        }
+    },
+    schema: {
+        data: "donors"
+    },
     pageSize: 4
   });
 
-	gauge = $('#fundraising_guage').kendoGauge({
+  gauge = $('#fundraising_guage').kendoGauge({
       theme: "blueopal",
 
       scale: {
@@ -72,8 +66,6 @@ $(function() {
   });
 
   var timer = setInterval(function() {
-    funder = { name: 'John Bristowe', donation: 35, avatar: '/img/people/bristowe.jpg' };
-
-    funds.insert(0, funder);
+    funds.read();
   }, 1000);
 });
