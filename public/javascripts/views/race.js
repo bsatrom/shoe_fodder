@@ -65,7 +65,7 @@ $(function() {
     gauge.value(total);
   });
 
-  var timer = setInterval(function() {
+  //var timer = setInterval(function() {
     funds.read();
-  }, 2000);
+  //}, 2000);
 });

@@ -26,17 +26,10 @@ img {
 	border-width: 0px;
 }
 
-/*
-ul {
-	width: 100%;
-	position: relative;
-	float: left;
-}
-*/
-
 #fundraising_list li {
 	list-style: none;
 	font-size: 18pt;
-	margin: 10px;
-	border-radius: 5px;
+	margin-top: 5px;
+	margin-left: -.8em;
 }
+
