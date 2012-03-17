@@ -67,5 +67,5 @@ $(function() {
 
   var timer = setInterval(function() {
     funds.read();
-  }, 1000);
+  }, 2000);
 });
