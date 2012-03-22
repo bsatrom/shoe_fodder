@@ -25,7 +25,7 @@ $(function(){
         maxMileage = $(this).data('max');
 
     $(this).kendoGauge({
-      theme: "blueopal",
+      theme: "blueopal", 
 
       pointer: {
         value: mileage
@@ -42,15 +42,15 @@ $(function(){
           {
             from: 0,
             to: maxMileage*.70,
-            color: "#00ab00"
+            color: "#00ab00" // green
           }, {
             from: maxMileage*.70,
             to: maxMileage*.90,
-            color: "#d3ce37"
+            color: "#d3ce37" // yellow
           }, {
             from: maxMileage*.90,
             to: maxMileage,
-            color: "#ae130f"
+            color: "#ae130f" // red
           }
         ]
       }
